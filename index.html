@@ -8,41 +8,41 @@
 </head>
 <body>
    <div class="container">
-       <div class="wrapper">
-           R<input type="range" min="0" max="255" value="0" id="red" oninput="colors()">
-       </div>
-       <div class="wrapper">
-            G<input type="range" min="0" max="255" value="0" id="green" oninput="colors()">
-             </div>
-            <div class="wrapper">
-            B<input type="range" min="0" max="255" value="0" id="blue" oninput="colors()">
-        </div>
+    <div class="wrapper">
+        R<input type="range" min="0" max="255" value="0" id="red" oninput="Values()">
+    </div>
+    <div class="wrapper">
+         G<input type="range" min="0" max="255" value="0" id="green" oninput="Values()">
+          </div>
+         <div class="wrapper">
+         B<input type="range" min="0" max="255" value="0" id="blue" oninput="Values()">
+     </div>
         <span id="output">rgb(0, 0, 0)</span>
   
         <div class="wrapper"> 
-            Padding : <input type="range" min="0" max="255" value="0" id="padding" oninput="colors()">
+            Padding : 0<input type="range" min="0" max="255" value="0" id="padding" oninput="Values()">255
             <span id="output2">padding : 0px</span>
 
         </div>
 
         <div class="wrapper"> 
-            Height : <input type="range" min="0" max="255" value="0" id="Height" oninput="colors()">
-            <span id="output3"> Margin : 0px</span>
+            Height : 0<input type="range" min="0" max="255" value="0" id="Height" oninput="Values()">255
+            <span id="output3"> Height : 0px</span>
 
         </div>
         <div class="wrapper"> 
-        Width : <input type="range" min="0" max="255" value="0" id="Width" oninput="colors()">
+        Width : 0<input type="range" min="0" max="255" value="0" id="Width" oninput="Values()">255
         <span id="output4"> Width : 0px</span>
 
     </div>
     <div class="wrapper"> 
-        Rotation : <input type="range" min="0" max="180" value="0" id="Rotation" oninput="colors()">180
+        Rotation:0<input type="range" min="0" max="180" value="0" id="Rotation" oninput="Values()">180
                 <span id="output5"> Rotation : 0px</span>
 
     </div>
 
     <div class="wrapper"> 
-        Arroundi : <input type="range" min="0" max="50" value="0" id="Border" oninput="colors()">50
+        Arroundi :  0<input type="range" min="0" max="50" value="0" id="Border" oninput="Values()">50
                 <span id="output6"> Arroundi : 0px</span>
 
     </div>
@@ -51,9 +51,10 @@
             <span id="results"> Result  </span>
 
         </div>
-
+    </div>
         <script>
-            function colors(){
+            function Values(){ 
+                // momkin nakhdo values dyal css intial ondirihom flvar on7thom ta f loutputs
                 var red= document.getElementById("red").value;
                 var green = document.getElementById("green").value;
                 var blue = document.getElementById("blue").value; 
@@ -79,6 +80,6 @@
                 document.getElementById("output6").innerHTML =  "Arroundi : " + Border +"px" ;
             }
         </script>
-   </div>
+   
 </body>
 </html>
